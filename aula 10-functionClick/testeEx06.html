@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Macsuel Dias Soares">
+    <meta name="description" content="Aprendendo javascript">
+    <title>Revisando</title>
+    <style>
+        #nome{
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(gold,orange);
+            font: bold arial 30px;
+            line-height: 300px;
+            text-align: center;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nome">
+        <h1>
+            Macsuel
+        </h1>
+    </div>
+    <script>
+        var atual = window.document.getElementById('nome')
+        atual.addEventListener('click', clicar)
+        atual.addEventListener('mouseenter', entrar)
+        atual.addEventListener('mouseout', sair)
+        function clicar () {
+            atual.innerText = 'Sara'
+            atual.style.background = 'linear-gradient(pink, red'
+            atual.style.textAlign = 'center'
+            atual.style.font = 'arial'
+            atual.style.fontWeight ='bold'
+            atual.style.fontSize = '30px'
+        }
+        function entrar () {
+            atual.innerText = 'Sophia'
+            atual.style.background = 'linear-gradient(green, pink)'
+            atual.style.textAlign = 'center'
+            atual.style.font = 'arial'
+            atual.style.fontWeight ='bold'
+            atual.style.fontSize = '30px'
+        }
+        function sair () {
+            atual.innerText = 'Macsuel'
+            atual.style.background = 'linear-gradient(gold, orange)'
+            atual.style.textAlign = 'center'
+            atual.style.font = 'arial'
+            atual.style.fontWeight ='bold'
+            atual.style.fontSize = '30px'
+        }
+    </script>    
+</body>
+</html>

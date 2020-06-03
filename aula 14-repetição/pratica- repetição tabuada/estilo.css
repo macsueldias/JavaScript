@@ -1,0 +1,30 @@
+body{
+    margin-top: 100px;
+    background:rgb(185, 167, 51);
+    font: arial 15pt;
+}
+
+header{
+    text-align: center;
+    color:white;
+}
+
+section{
+    background: white;
+    text-align: center;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    border-radius: 20px;   
+}
+
+div{
+    
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font:Times;
+}
+

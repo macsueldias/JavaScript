@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Macsuel Dias Soares">
+    <meta name="description" content="Aprendendo javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando aprendizado</title>
+</head>
+<body>
+    <input type="text" name="p1" id="p1">
+    <input type="text" name="p2" id="p2">
+    <input type="text" name="p3" id="p3">
+    <input type="button" value="Juntar" onclick="juntar()">
+    <div id="nome">
+    Seu nome completo
+    </div>   
+    <script>
+        function juntar() {
+            var a = String(p1)
+            var b = String(p2)
+            var c = String(p3)
+            var s = a + b + c
+            nome.innerText = `Seu nome completo é ${s}`
+            
+        }
+
+    </script> 
+</body>
+</html>

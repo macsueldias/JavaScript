@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vagas para brasileiros</h1>
+    Qual é o seu país de origem: <input type="text" name="nac" id="nac">
+    <input type="button" value="verificar" onclick="dispon ()">
+    <div id="res">
+        
+    </div>
+    <script>
+        function dispon () {
+            var a = window.document.querySelector ('input#nac') //A variavel 'a' recebe a div 'nac'
+            var res = window.document.querySelector ('div#res') //A variavel 'res' recebe a div 'res'(para que possa receber o inner abaixo)
+            var pais = (a.value)
+            res.innerHTML = `Seu país de origem é o <strong>${pais}</strong> `
+            if (pais == "Brasil"){
+                res.innerHTML += `<p>Você tem o perfil da vaga por ser brasileiro.</p>`
+            }else {
+                    res.innerHTML += `<p>Você não atende aos requisitos básicos para a vaga.</p>`
+            }            
+        }
+    </script>
+</body>
+</html>

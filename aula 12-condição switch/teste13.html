@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Macsuel Dias Soares">
+    <meta name="description" content="Aprendendo JavaScript">
+    <title>switch</title>
+</head>
+<body>
+    <h1>Saiba sobre você na familia</h1>
+    Digite seu nome: <input type="text" name="nome" id="nome">
+    <input type="button" value="verificar" onclick="familia ()">
+    <div id="res">
+
+    </div>
+    <script>
+        function familia() {  
+            var ident = window.document.querySelector('input#nome')          
+            var res = window.document.querySelector('div#res')
+            var descr = String(ident.value)
+            res.innerHTML = `<p> Olá ${descr}</p>`  
+            switch (descr){
+                case 'Macsuel':
+                    res.innerHTML = `<p>${descr} é filho de Cicero e Socorro, reside no bairro Vem Viver juntamente com sua esposa Sara e sua filha Sophia.</p>`
+                    break
+                case 'Sara':
+                    res.innerHTML = `<p>${descr} é filha de Miguel e Eva, reside no bairro Vem Viver juntament com seu marido Macsuel e sua filha Sophia.</p>`
+                    break
+                case 'Sophia':
+                    res.innerHTML = `<p> ${descr} é filha de Macsuel e Sara, reside no bairro Vem Viver juntamente com seus pais</p>`
+                default :
+                    res.innerHTML = `[ERRO] ${descr} não pertence a familia`
+                    break
+            }
+        }
+    </script>
+    
+</body>
+</html>

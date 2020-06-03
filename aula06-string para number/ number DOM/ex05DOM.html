@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos em DOM </title>
+    <style>
+        body{
+            background: blue;
+            color: black;
+            font: normal 10pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução ao DOM. Curso de JavaScript</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong></p>
+    <div id="msg">Clique em mim</div>
+    <div name="java">Desistir nunca</div>
+    <div class="otimo">Serei um excelente programador</div>
+    <script>
+
+        /* //Por marca
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        p1.style.background = 'red'
+        corpo.style.background = 'white'
+        window.alert(p1.innerText)
+        */
+
+        /*  //Por Id
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+        
+        /* //Por Nome
+        var g = window.document.getElementsByName('java')[0]
+        g.style.background = 'red'
+        g.innerText ='background red color'
+        */
+        
+        /* //Por Classe
+        var h = window.document.getElementsByClassName('otimo')[0]
+        h.innerHTML = 'Se Deus quiser'
+        h.style.color= 'gold'
+        */
+
+        /* //Por Seletor
+        var j = window.document.querySelector('div.otimo')
+        j.style.background = 'yellow' 
+        j.innerText = 'Vou me esforçar o máximo que posso'
+        */
+
+    </script>
+    
+</body>
+</html>
